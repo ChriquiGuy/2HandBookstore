@@ -186,12 +186,12 @@ use bookstoredatabase;
 -- where employee_id = 101 and date = '2019-01-01'
 
 #26
-select employee_id, name, count(employee_id) sales
-from purchase
-left join employee on employee.id = purchase.employee_id
-where date between '2019-11-1' and ('2019-11-1' + interval 1 month)
-group by employee_id
-order by sales desc limit 1
+-- select employee_id, name, count(employee_id) sales
+-- from purchase
+-- left join employee on employee.id = purchase.employee_id
+-- where date between '2019-11-1' and ('2019-11-1' + interval 1 month)
+-- group by employee_id
+-- order by sales desc limit 1
 
 
 
